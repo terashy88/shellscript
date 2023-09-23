@@ -46,6 +46,7 @@ echo 'Hello, my name is {$name2}.\n';  > Hello, my name is {$name2}.\n
 find / -type d -iname "*steam*"
 sudo find /* -name "*.old"
 grep 'input' /../..
+grep 'zsh' ~/.zshrc
 ls ~/**/*.png*
 
 # the elif (else if) and else sections are optional
@@ -64,6 +65,13 @@ ls ~/**/*.png*
 '  <=   ' - is less than or equal to - (("$a" <= "$b"))
 '   >   ' - is greater than - (("$a" > "$b"))
 '  >=   ' - is greater than or equal to - (("$a" >= "$b"))
+
+useradd -mUG lp,network,power,wheel <new_user_name>
+man usermod
+man groupmod
+userdel -rf <old_user_name>
+
+groupmod --new-name $NEWGROUP $OLDGROUP
 
 # Change shell
 # chsh -s /usr/bin/zsh
@@ -117,6 +125,10 @@ elif [[ $word == "a" ]]; then
 else
     echo "condition is false"
 fi
+
+Hint:
+SAMBA: → //192.168.1.122/Music/
+NFS → 192.168.1.122:/Music/
 
 # -a file
 # True if file exists.
