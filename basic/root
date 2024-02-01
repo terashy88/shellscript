@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [[ "$(whoami)" = 'root' ]]; then
+    echo "root"
+else
+    echo "you are not root"
+    echo "you are $(whoami)"
+fi
