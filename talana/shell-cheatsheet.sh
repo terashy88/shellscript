@@ -6,17 +6,16 @@ A && B   # Run B if and only if A succeeded
 A || B   # Run B if and only if A failed
 A &      # Run A in background.
 
-#!/usr/bin/env bash
 
 # echo "Different Operators '&&, ||, ;, & whish one you like to now about?"
 # read $1
 
-# -eq=Equal -ne=notEqual -gt=greaterthen -lt=lessthen -a=and
+# -eq=Equal -ne=notEqual -gt="greater then" -lt="less then" -a=and
 
 # && "and and" only run second command if first command succeeded
 # cat bash.sh  echo "'&&' first command" && echo "second command only run if first command succeeded"
 
-# || "pipe pipe" if first command faile run second command
+# || "pipe pipe" if first command fail run second command
 cat ~/ee || echo "only run if first command not found"
 
 # ; "semi colon" run one code than run a other code
@@ -1027,6 +1026,8 @@ else
     statements
 fi
 
+
+# Find / search
 # find / -type d -iname "*steam*"
 # sudo find /* -name "*.old"    #!sudo don't work
 # grep 'input' /../..
@@ -7466,7 +7467,6 @@ echo '                        *$()*                               '
 EOF2
 
 
-#!/bin/bash
 #########  opensource / Cheatsheet / playbook ##########
 
 #todo checkout script's at /usr/share/*
@@ -7600,7 +7600,6 @@ arp -a
 ## VirtualBox
 #sudo usermod -a -G vboxusers $USER
 
-#!/bin/bash
 ##############################################################################
 # SHORTCUTS and HISTORY
 ##############################################################################
@@ -8015,6 +8014,7 @@ n>&-       # closes the ouput from file descriptor n
 n<&-       # closes the input from file descriptor n
 
 |tee <file># output command to both terminal and a file (-a to append to file)
+# echo "options kvm-intel nested=1" | sudo tee /etc/modprobe.d/kvm-intel.conf
 
 
 ##############################################################################
