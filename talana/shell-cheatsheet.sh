@@ -1,3 +1,5 @@
+# shellcheck shell=bash
+# shellcheck disable=SC2312
 #!/usr/bin/env bash
 LANG=en_US.UTF-8
 : <<EOF
